@@ -1,0 +1,11 @@
+    .bg-color-menu{
+      background: black;
+    }
+
+body{
+  background: rgb(8, 16, 58);
+}
+
+nav{
+  border-bottom: 1px solid #fff;
+}
