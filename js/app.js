@@ -45,7 +45,7 @@ function addContact(e) {
   $("#modal1").modal("close");
 }
 
-function paintContactsInHtml (contact) {
+function paintContactsInHtml (contact)   {
   // crear elementos con DOM
   var $newContact = $("<article />", {
     "class": "card-panel hoverable"
@@ -66,7 +66,7 @@ function paintContactsInHtml (contact) {
 
   $deleteContactButton.append($removeIcono);
   $containerContactName.text(contact.name);
-  $containerContactPhone.text(contact.phone);
+  $containerContactPhone.text(  contact.phone);
 
   $newContact.append($containerContactName);
   $newContact.append($deleteContactButton);
@@ -97,7 +97,9 @@ function filterContacts (){
       });      
     }
 
-  
+
+
+    
   // console.log(filteredContacts);
 
   
@@ -105,7 +107,7 @@ function filterContacts (){
 
 function removeContact () {
   $(this).parent().remove();
-  console.log($(this).parent())
+  // console.log($(this).parent())
 }
 
 
